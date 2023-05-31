@@ -54,10 +54,5 @@ public class NovelHook implements IXposedHookLoadPackage {
                 param.setResult(false);
             }
         });
-
-
-
-
-
     }
 }
