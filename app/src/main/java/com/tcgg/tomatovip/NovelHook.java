@@ -23,15 +23,10 @@ public class NovelHook implements IXposedHookLoadPackage {
                         String isVip = (String) args[1];
                         String leftTime = (String) args[2];
                         boolean isAutoCharge = (boolean) args[3];
-
-                        XposedBridge.log("TomatoVIP : 番茄 Hook 前 :expireTime -" + expireTime + "\nisVip - " + isVip +
-                                "\n leftTime - " + leftTime + "\n isAutoCharge - " + isAutoCharge);
-
                         args[0] = "4102415999";
                         args[1] = "1";
                         args[2] = "999999";
                         args[3] = false;
-                        XposedBridge.log("TomatoVIP : 小天番茄小说vip信息hook完毕");
                     }
 
                     @Override
@@ -42,9 +37,6 @@ public class NovelHook implements IXposedHookLoadPackage {
                         String isVip = (String) args[1];
                         String leftTime = (String) args[2];
                         boolean isAutoCharge = (boolean) args[3];
-
-                        XposedBridge.log("TomatoVIP : 番茄 Hook 后 :expireTime -" + expireTime + "\nisVip - " + isVip +
-                                "\n leftTime - " + leftTime + "\n isAutoCharge - " + isAutoCharge);
                     }
                 });
 
